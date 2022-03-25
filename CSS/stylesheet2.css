@@ -1,0 +1,156 @@
+
+#grilla {
+    display: grid;
+    grid-template-areas:
+    "section0"
+    "section1"
+    "section2";
+    grid-template-rows: 150px 170px 170px;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+.section0 {
+    grid-area: section0;
+    display: flex;
+    flex-direction: row;
+}
+.section1 {
+    grid-area: section1;
+    display: flex;
+    flex-direction: row;
+}
+.section2 {
+    grid-area: section2;
+    display: flex;
+    flex-direction: row;
+}
+.h1 {
+    font-family: 'Roboto';
+    font-size: 50px;
+    color: #272727;
+    width: 450px;
+    font-weight: bold;
+}
+.buton1 {
+    background-color: #E9E927;
+    width: 400px;
+    height: 150px;
+    color: #272727;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 30px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+}
+.buton2 {
+    background-color: white;
+    width: 400px;
+    height: 150px;
+    color: #272727;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 30px;
+    border: #272727 solid 3px;
+    padding: 10px;
+    margin: 10px;
+}
+.buton3 {
+    background-color: #272727;
+    width: 400px;
+    height: 150px;
+    color: white;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 30px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+}
+.buton4 {
+    background-color: #CC0000;
+    width: 400px;
+    height: 150px;
+    color: white;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 30px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+}
+.h16 {
+    font-family: 'Roboto';
+    font-size: 50px;
+    color: #272727;
+    width: 150px ;
+    font-weight: bold;
+}
+.h17 {
+    font-family: 'Roboto';
+    font-size: 50px;
+    color: #272727;
+    width: 250px;
+    font-weight: bold;
+}
+.article {
+    text-align: center;
+    width: 100px;
+}
+@media screen and (max-width: 768px){
+    #grilla {
+        display: grid;
+        grid-template-areas:
+        "section0"
+        "section1" 
+        "section2";
+        grid-template-rows: 150px 200px 200px;
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+    .buton1 { 
+            width: 300px;
+            height: 190px;
+            font-size: 20px;
+            padding: 10px;
+            margin: 10px;
+        }
+    .buton2 { 
+            width: 300px;
+            height: 190px;
+            font-size: 20px;
+            padding: 10px;
+            margin: 10px;
+        }
+    .buton3 { 
+            width: 300px;
+            height: 190px;
+            font-size: 20px;
+            padding: 10px;
+            margin: 10px;
+        }
+    .buton4 { 
+            width: 300px;
+            height: 190px;
+            font-size: 20px;
+            padding: 10px;
+            margin: 10px;
+        }
+    .h1 {
+        width: 600px;
+    }
+}
+.animate__swing {
+    animation-delay: 0s;
+    animation-duration: 1s;
+}
+.animate__tada {
+    animation-delay: 0s;
+    animation-duration: 1s;
+}
+.animate__backInLeft {
+    animation-delay: 0s;
+    animation-duration: 1s;
+}

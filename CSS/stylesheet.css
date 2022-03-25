@@ -1,0 +1,304 @@
+#grilla {
+    display: grid;
+    grid-template-areas:
+    "section0"
+    "section01"
+    "section1" 
+    "section2" 
+    "section3" 
+    "section4" 
+    "footer";
+    grid-template-rows: 30px 65px 245px 165px 165px 165px 165px;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+}
+.section0 {
+    grid-area: "section0";
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.article0 {
+    width: 1000px;
+    height: 0px;
+    background-color: white;
+    border: none;
+}
+.section01 {
+    grid-area: "section01";
+    display: flex;
+    flex-direction: row;
+}
+.section1{
+    grid-area: "section1";
+    display: flex;
+    flex-direction: row;
+}
+.section2 {
+    grid-area: "section2";
+    gap: 5px;
+}
+.section3 {
+    grid-area: "section3";
+    gap: 5px;
+}
+.section4 {
+    grid-area: "section4";
+    background-image: url(../imagenes/mapa22.jpg);
+    text-align: center;
+}
+.square {
+    background-color: #272727;
+    width: 100%;
+    color: white;
+    font-family: 'Roboto';
+    height: 200px;
+    text-align: center;
+    grid-area: "footer";
+}
+.button1 [type=button] {
+    border-radius: 50px;
+    background-color: #CC0000;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 5px;
+    color: white;
+    width: 120px;
+    font-family: 'Roboto';
+    margin-top: 20px;
+    border: none;
+}
+.button1 [type=button]:hover {
+    background-color: #ffffff;
+    border: solid #5e5d5d 2px;
+    color:#272727;
+  }
+
+.h1 {
+    font-size: 25px;
+    margin-top: 10px;
+    border: solid 3px black;
+    width: 304px;
+    height: 70px;
+    font-family: 'Roboto';
+    text-align: right;
+    margin: 20px;
+}
+.imagen1 {
+    width: 310px;
+    height: 180px;
+    margin: 20px;
+}
+.imagen2 {
+    margin-left: 5px;
+    width: 790px;
+    height: 238px;
+    margin-top: 20px;
+}
+.button2 {
+    background-color: #272727;
+    font-size: 20px;
+    color: white;
+    font-family: 'Roboto';
+    font-weight: bolder;
+    width: 350px;
+    height: 160px;
+    text-align: left;
+    margin: 10px;
+    margin-left: 20px;
+}
+.button3 {
+    background-color: white;
+    font-size: 20px;
+    color: #272727;
+    font-family: 'Roboto';
+    font-weight: bolder;
+    width: 350px;
+    height: 160px;
+    border: solid 3px black;
+    text-align: left;
+    margin: 10px;
+}
+.button4 {
+    background-color: #CC0000;
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: bolder;
+    color: white;
+    width: 350px;
+    height: 160px;
+    border: 0ch;
+    text-align: left;
+    margin: 10px;
+}
+.button5 {
+    background-image: url(../imagenes/fusion.png);
+    background-size: cover;
+    font-size: 20px;
+    color: #272727;
+    font-family: 'Roboto';
+    font-weight: bolder;
+    width: 350px;
+    height: 160px;
+    border: none;
+    text-align: left;
+    margin: 10px;
+    margin-left: 20px;
+}
+.button6 {
+    background-color: #E9E927;
+    font-size: 20px;
+    font-family: 'Roboto';
+    color: #272727;
+    font-weight: bolder;
+    width: 350px;
+    height: 160px;
+    border: 0ch;
+    text-align: left;
+    margin: 10px;
+}
+.button7 {
+        background-image: url(../imagenes/comidaalpaso.png);
+        background-size: cover;
+        font-size: 20px;
+        color: #272727;
+        font-family: 'Roboto';
+        font-weight: bolder;
+        width: 350px;
+        height: 160px;
+        border: none;
+        text-align: left;
+        margin: 10px;
+}
+.h3 {
+    font-size: 20;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+.h5 {
+    font-size: 15;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+.form2 {
+        width: 500px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: 1px solid rgb(252, 251, 251);
+        border-radius: 50px;
+        box-sizing: border-box;
+}
+.input [type=email] {
+        width: 500px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: 1px solid rgb(252, 249, 249);
+        border-radius: 50px;
+        box-sizing: border-box;
+}
+.input [type=submit] {
+    width: 50px;
+    background-color: #272727;
+    color: white;
+    border: 1px solid white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+.input [type=submit]:hover {
+    background-color: #ffffff;
+    color:#272727;
+  }
+
+@media screen and (max-width: 768px){
+    #grilla {
+        display: grid;
+        grid-template-areas:
+        "section0"
+        "section01"
+        "section1" 
+        "section2" 
+        "section3" 
+        "section4" 
+        "footer";
+        grid-template-rows: 20px 55px 145px 150px 150px 150px 150px;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+    .imagen2 {
+        width: 460px;
+        height: 150px;
+        padding: 2px;
+        margin: 2px;
+    }
+    .imagen1 {
+        width: 220px;
+        height: 129px;
+        padding: 2px;
+        margin: 2px;
+    }
+    .h1 {
+        width: 215px;
+        padding: 2px;
+        margin: 2px;
+        height: 60px;
+    }
+    .section2 {
+        display: flex;
+        flex-direction: row;
+        padding: 2px;
+        margin: 2px;
+}
+    .button2 {
+        width: 220px;
+        height: 150px;
+        padding: 2px;
+        margin: 4px;
+        font-size: 15px;
+    }
+    .button3 {
+        width: 220px;
+        height: 150px;
+        padding: 2px;
+        margin: 4px;
+        font-size: 18px;
+    }
+    .button4 {
+        width: 220px;
+        height: 150px;
+        padding: 2px;
+        margin: 4px;
+        font-size: 18px;
+    }
+    .button5 {
+        width: 220px;
+        height: 150px;
+        padding: 2px;
+        margin: 4px;
+        font-size: 18px;
+    }
+    .button6 {
+        width: 220px;
+        height: 150px;
+        padding: 2px;
+        margin: 4px;
+        font-size: 18px;
+    }
+    .button7 {
+        width: 220px;
+        height: 150px;
+        padding: 2px;
+        margin: 4px;
+        font-size: 13px;
+    }
+    .section3 {
+        display: flex;
+        flex-direction: row;
+        padding: 2px;
+        margin: 2px;
+} 
+    .section0 {
+        width: 700px;
+    }
+}
